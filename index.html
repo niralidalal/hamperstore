@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hamperlicious – Gift Hampers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <h1>Hamperlicious</h1>
+      <input type="text" id="searchBar" placeholder="Search hampers..." onkeyup="filterProducts()" />
+    </div>
+  </header>
+  <!-- Logo Section -->
+  <div class="logo" style="text-align: center; padding: 20px;">
+    <img src="images/logo.jpg" alt="Hamperlicious Logo" style="max-width: 200px;">
+  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to Hamperlicious</h2>
+    <p>Where every hamper tells a story.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      Hamperlicious – where every hamper tells a story. We curate customized hampers for occasions like birthdays, anniversaries, return favours, corporate gifting, baby showers, bridesmaid hampers, chocolate hampers and fruit hampers starting @1999/- only.
+    </p>
+  </section>
+
+  <!-- Product Catalog -->
+  <section class="products" id="products">
+    <h2>Our Hampers</h2>
+    <div class="product-grid" id="productList">
+      <!-- JS will inject products here -->
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <p>Total: ₹<span id="totalPrice">0</span></p>
+    <button onclick="showCheckout()" class="btn">Proceed to Checkout</button>
+  </section>
+
+  <!-- Checkout Section -->
+  <section class="checkout" id="checkoutSection" style="display: none;">
+    <h2>Checkout</h2>
+    <form id="checkoutForm">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Delivery Address" required />
+      <button type="submit" class="btn">Place Order (Simulated)</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: <a href="tel:7879097177">7879097177</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/hamperlicious_20" target="_blank">@hamperlicious_20</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Hamperlicious. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
