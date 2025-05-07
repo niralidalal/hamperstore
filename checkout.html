@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - Hamperlicious</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="logo">
+    <img src="images/logo.jpg" alt="Hamperlicious Logo" />
+  </div>
+
+  <header class="hero">
+    <h1>Checkout</h1>
+    <p>Complete your order</p>
+  </header>
+
+  <main style="padding: 20px;">
+    <form id="checkout-form" class="checkout-form">
+      <label>Name:<br><input type="text" name="name" required /></label><br><br>
+      <label>Email:<br><input type="email" name="email" required /></label><br><br>
+      <label>Phone Number:<br><input type="tel" name="phone" required /></label><br><br>
+      <label>Shipping Address:<br><textarea name="address" required></textarea></label><br><br>
+      <button type="submit">Proceed to Payment</button>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById("checkout-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you! Your order has been placed.");
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
