@@ -7,6 +7,16 @@ body {
   color: #333;
 }
 
+.hamperlicious-text
+{
+    font-family: 'Anril Fatface', serif;
+}
+
+.tagline-text
+{
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
 .logo {
   text-align: center;
   padding: 20px;
